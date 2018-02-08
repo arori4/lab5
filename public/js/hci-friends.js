@@ -10,11 +10,17 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+	$(".nameclick").click( function (e){
+		e.preventDefault();
+		$(this).text(anagrammedName($(this).text()));
+	});
 }
 
+
+
 function anagrammedName(name) {
-	// Thanks, Internet Anagram Server!
-	
+
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 
@@ -38,6 +44,9 @@ function anagrammedName(name) {
 	}
 	else if (name == "Grace Hopper") {
 		return "Gear Chopper";
+	}
+	else if (name ==  "Derek Carr") {
+		return "Ark Rec Red";
 	}
 	else {
 		console.log(name + " not known for anagramming.");

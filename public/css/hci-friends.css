@@ -12,3 +12,12 @@
 h1, h2, h3, h4, h5 {
 	color: #8382BF;
 }
+
+.hci-card {
+	margin: auto;
+	width: 50%;
+}
+
+.hci-card .img-responsive{
+	object-fit: scale-down;
+}
